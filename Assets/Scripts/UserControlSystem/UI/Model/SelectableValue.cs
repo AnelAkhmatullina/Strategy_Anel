@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Abstractions; 
 
-[CreateAssetMenu(fileName = nameof(SelectableValue), menuName = "Strategy Game/" + nameof(SelectableValue), order = 2)]
+[CreateAssetMenu(fileName = nameof(SelectableValue), menuName = "Strategy Game/" + nameof(SelectableValue), order = 0)]
 
 public class SelectableValue : ScriptableObject
 {

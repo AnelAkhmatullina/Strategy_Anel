@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs" />
+    <Compile Include="Assets/Scripts/UserControlSystem/UI/Presenter/PickPresenter.cs" />
     <Compile Include="Assets/Scripts/UserControlSystem/UI/Presenter/BottomLeftPresenter.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,13 +5,14 @@ using Abstractions;
 public class MouseInteractionPresenter : MonoBehaviour
 {
     [SerializeField] private Camera _mainCamera;
-    [SerializeField] private SelectableValue _selectedObject;  
+    [SerializeField] private SelectableValue _selectedObject;
+    public bool isPicked;  
 
     private void Update()
     {
         if (!Input.GetMouseButtonUp(0))
         {
-            return;
+            return; 
         }
 
         var hits = Physics.RaycastAll(_mainCamera.ScreenPointToRay(Input.mousePosition));
@@ -24,7 +25,8 @@ public class MouseInteractionPresenter : MonoBehaviour
             .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
             .Where(c => c != null)
             .FirstOrDefault(); 
-        _selectedObject.SetValue(selectable); 
+        _selectedObject.SetValue(selectable);
+        isPicked = true;  
          
     }
 }

@@ -344,6 +344,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/UserControlSystem/UI/Presenter/BottomLeftPresenter.cs"
 "Assets/Scripts/UserControlSystem/UI/Presenter/MouseInteractionPresenter.cs"
+"Assets/Scripts/UserControlSystem/UI/Presenter/PickPresenter.cs"
 -langversion:9.0
 
 /deterministic
